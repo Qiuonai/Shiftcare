@@ -1,26 +1,40 @@
-@import "tailwindcss";
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Body Styles based on Brand Identity */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #343A40; /* neutral-dark for text */
+  background-color: #F0F8FF; /* Start with a subtle bluish background */
+  line-height: 1.6; /* Improve readability */
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0056B3; /* primary-blue for headings */
+  font-weight: 700; /* Bolder headings */
+}
+
+/* Custom Tailwind utility for glassmorphism blur */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px); /* Adjust blur strength as needed */
+  -webkit-backdrop-filter: blur(12px); /* For Safari compatibility */
+}
+
+/* Custom Animations for Hero Section (keep these) */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+.animate-fade-in-up { animation: fadeInUp 1s ease-out 0.3s forwards; }
+.animate-scale-in { animation: scaleIn 0.8s ease-out 0.6s forwards; }
