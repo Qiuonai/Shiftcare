@@ -24,11 +24,11 @@ const mockJobs: Job[] = [
     clinicName: 'City General Hospital',
     dates: 'Sunday, July 14th',
     time: '8:00 AM - 6:00 PM',
-    location: 'Downtown, City',
+    location: 'Gulshan, Dhaka',
     rate: '$120/hour',
     description: 'Seeking an experienced Emergency Physician for a busy Sunday shift. Must be board-certified with valid ACLS/BLS.',
-    applicationLink: 'https://wa.me/yournumber?text=I%27m%20interested%20in%20the%20Emergency%20Physician%20shift%20at%20City%20General%20Hospital',
-    buttonText: 'Apply via WhatsApp', // Custom button text
+    applicationLink: 'https://forms.gle/92mjVpN7GBLHVvU78',
+    buttonText: 'Apply Now', // Custom button text
   },
   {
     id: 2,
@@ -37,11 +37,11 @@ const mockJobs: Job[] = [
     clinicName: 'Children\'s Care Clinic',
     dates: 'Monday, July 15th',
     time: '9:00 AM - 5:00 PM',
-    location: 'Northside, City',
+    location: 'Mirpur, Dhaka',
     rate: '$65/hour',
     description: 'Experienced Pediatric Nurse needed for a day shift. Strong communication skills required.',
-    applicationLink: 'https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/viewform', // Example: A Google Form link
-    buttonText: 'Apply via Google Form',
+    applicationLink: 'https://forms.gle/92mjVpN7GBLHVvU78', // Example: A Google Form link
+    buttonText: 'Apply Now',
   },
   {
     id: 3,
@@ -50,11 +50,11 @@ const mockJobs: Job[] = [
     clinicName: 'Skin Health Center',
     dates: 'Tuesday, July 16th',
     time: '10:00 AM - 4:00 PM',
-    location: 'Westside, City',
+    location: 'Rangpur Sadar, Rangpur',
     rate: '$150/hour',
     description: 'Board-certified Dermatologist for a specialized clinic. Must have experience with minor procedures.',
-    applicationLink: 'https://www.skinhealthcenter.com/careers/dermatologist-opening', // Example: Link to the clinic's own job post
-    buttonText: 'Apply on Clinic Site',
+    applicationLink: 'https://forms.gle/92mjVpN7GBLHVvU78', // Example: Link to the clinic's own job post
+    buttonText: 'Apply Now',
   },
   {
     id: 4,
@@ -63,11 +63,37 @@ const mockJobs: Job[] = [
     clinicName: 'Community Health Clinic',
     dates: 'Wednesday, July 17th',
     time: '9:00 AM - 5:00 PM',
-    location: 'Eastside, City',
+    location: 'Dhaka, City',
     rate: '$90/hour',
     description: 'GP needed for general consultations. Experience in primary care essential.',
-    applicationLink: 'https://wa.me/anothernumber?text=I%27m%20interested%20in%20the%20GP%20shift%20at%20Community%20Health%20Clinic', // Another WhatsApp link
-    // No buttonText here, will default to "Apply Now"
+    applicationLink: 'https://forms.gle/92mjVpN7GBLHVvU78', // Another WhatsApp link
+    // No buttonText here, will default to "Apply "
+  },
+  {
+    id: 5,
+    title: 'Dermatologist',
+    specialty: 'Dermatology',
+    clinicName: 'Skin Health Center',
+    dates: 'Tuesday, July 16th',
+    time: '10:00 AM - 4:00 PM',
+    location: 'Azimpur, Dhaka',
+    rate: '$150/hour',
+    description: 'Board-certified Dermatologist for a specialized clinic. Must have experience with minor procedures.',
+    applicationLink: 'https://forms.gle/92mjVpN7GBLHVvU78', // Example: Link to the clinic's own job post
+    buttonText: 'Apply Now',
+  },
+  {
+    id: 6,
+    title: 'Dermatologist',
+    specialty: 'Dermatology',
+    clinicName: 'Skin Health Center',
+    dates: 'Tuesday, July 16th',
+    time: '10:00 AM - 4:00 PM',
+    location: 'Banani, Dhaka',
+    rate: '$150/hour',
+    description: 'Board-certified Dermatologist for a specialized clinic. Must have experience with minor procedures.',
+    applicationLink: 'https://forms.gle/92mjVpN7GBLHVvU78', // Example: Link to the clinic's own job post
+    buttonText: 'Apply Now',
   },
 ];
 
