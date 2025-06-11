@@ -84,9 +84,9 @@ const mockJobs: Job[] = [
   },
   {
     id: 6,
-    title: 'Dermatologist',
-    specialty: 'Dermatology',
-    clinicName: 'Skin Health Center',
+    title: 'Gynaecologist',
+    specialty: 'Gynaecology',
+    clinicName: 'Snile Health Center',
     dates: 'Tuesday, July 16th',
     time: '10:00 AM - 4:00 PM',
     location: 'Banani, Dhaka',
