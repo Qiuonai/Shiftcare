@@ -324,7 +324,7 @@ export default function HomePage() {
               <p className="text-primary-blue text-md mb-4 animate-pulse">Submitting...</p>
             )}
             {submitSuccess === true && (
-              <p className="text-secondary-green text-md mb-4">Thank you for signing up! We'll be in touch.</p>
+              <p className="text-secondary-green text-md mb-4">Thank you for signing up! We&apos;ll be in touch.</p>
             )}
             {submitSuccess === false && (
               <p className="text-red-500 text-md mb-4">Something went wrong. Please try again later.</p>
